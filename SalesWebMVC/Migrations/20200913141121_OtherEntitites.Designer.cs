@@ -9,7 +9,7 @@ using SalesWebMVC.Data;
 namespace SalesWebMVC.Migrations
 {
     [DbContext(typeof(SalesWebMVCContext))]
-    [Migration("20200913132739_OtherEntitites")]
+    [Migration("20200913141121_OtherEntitites")]
     partial class OtherEntitites
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -58,13 +58,13 @@ namespace SalesWebMVC.Migrations
 
                     b.Property<double>("BaseSalary");
 
-                    b.Property<DateTime>("BithDate");
+                    b.Property<DateTime>("BirthDate");
 
                     b.Property<int?>("DepartmentId");
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Email");
 
-                    b.Property<string>("email");
+                    b.Property<string>("Name");
 
                     b.HasKey("Id");
 
